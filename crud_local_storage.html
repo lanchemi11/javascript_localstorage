@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        .sve{
+            display: flex;
+            justify-content: space-around;
+            vertical-align: top;
+        }
+
+        .forma, #za_update{
+            flex-basis: 45%;
+        }
+    </style>
+</head>
+<body>
+    
+    <table id="tabela">
+      
+    </table>
+
+    <div class="sve">
+        <form action="" id="forma">
+            <h1>Dodaj novu knjigu</h1>
+            <p>
+                <label>Naziv</label>
+                <input type="text" name="naziv" id="naziv">
+            </p>
+    
+            <p>
+                <label for="autor">Autor</label>
+                <input type="text" name="autor" id="autor">
+            </p>
+    
+            <p>
+                <label for="godina">Godina izdanja</label>
+                <input type="number" name="godina" id="godina">
+            </p>
+    
+            <p>
+                <label for="cena">Cena</label>
+                <input type="number" name="cena" id="cena">
+            </p>
+            
+            <p>
+                <label for="broj_stranica">Broj stranica</label>
+                <input type="number" name="broj_stranica" id="broj_stranica">
+            </p>
+    
+            <p>
+                <input type="submit" value="Dodaj knjigu">
+            </p>
+        </form>
+
+
+        <div id="za_update">
+
+        </div>
+    </div>
+
+    <p>
+        <label for="jetinije">Unesite maksimalnu cenu knjige</label>
+        <input type="number" name="jeftinije" id="jeftinije" onkeyup="prikazi_jeftinije();">
+    </p>
+
+    <button>Prikazi jeftinije</button>
+    <script src="js/crud2.js"></script>
+</body>
+</html>
